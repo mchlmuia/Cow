@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#b3cece"
+    android:background="@color/common_google_signin_btn_text_dark_default"
     android:orientation="vertical"
     tools:context=".SignUpActivity">
 
@@ -12,14 +12,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/common_google_signin_btn_text_dark_default">
 
         <ImageView
             android:layout_width="140dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/logo" />
+            android:background="@drawable/download" />
 
     </RelativeLayout>
 
@@ -31,7 +32,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:layout_weight="1"
-        android:background="@color/colorPrimary">
+        android:background="@color/common_google_signin_btn_text_dark_default">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,20 +47,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:hint="email"
+                android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:paddingBottom="15dp"
-                android:textColorHint="@color/colorAccent" />
+                android:textColorHint="#396d39" />
 
             <EditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:hint="password"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingBottom="15dp"
-                android:textColorHint="@color/colorAccent" />
+                android:textColorHint="#396d39" />
 
             <Button
                 android:id="@+id/buttonSignUp"
@@ -67,20 +68,23 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="7dp"
-                android:background="@android:color/holo_blue_dark"
+                android:background="@drawable/rounded_button_solid"
                 android:text="Sign Up"
                 android:textAllCaps="false"
-                android:textColor="@color/colorAccent" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                tools:background="#396d39" />
 
             <TextView
                 android:id="@+id/textViewLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
                 android:padding="15dp"
                 android:text="Already have an account? Login"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="@color/colorAccent" />
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
 
 
         </LinearLayout>

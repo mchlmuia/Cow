@@ -17,7 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".ProfilleActivity"></activity>
+        <activity android:name=".ProfilleActivity" />
+        <activity
+            android:name=".TabbedLayout"
+            android:label="@string/title_activity_tabbed_layout"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

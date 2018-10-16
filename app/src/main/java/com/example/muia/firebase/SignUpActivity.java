@@ -35,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             mAuth = FirebaseAuth.getInstance();
 
             findViewById(R.id.buttonSignUp).setOnClickListener(this);
-            findViewById(R.id.textViewSignup).setOnClickListener(this);
+            findViewById(R.id.textViewLogin).setOnClickListener(this);
     }
         private void registerUser(){
             String email = editTextEmail.getText().toString().trim();
@@ -46,12 +46,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 editTextEmail.requestFocus();
                 return;
             }
-
-            if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 editTextEmail.setError("Please enter a valid email");
                 editTextEmail.requestFocus();
                 return;
             }
+
 
             if(password.isEmpty()){
                 editTextPassword.setError("Password is Required");
@@ -70,11 +70,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
+                    progressBar.setVisibility(View.GONE);
                     if(task.isSuccessful()){
-                        Toast.makeText(getApplicationContext(), "User Registered Successfull", Toast.LENGTH_SHORT).show();
-                        Intent intent= new Intent(SignUpActivity.this,ProfilleActivity.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent);
+                        finish();
+                        startActivity(new Intent(SignUpActivity.this, MainActivity.class));
 
 
                     }else {
@@ -87,7 +86,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                         }
                 }
             });
-            progressBar.setVisibility(View.INVISIBLE);
+
         }
     @Override
     public void onClick(View view) {
@@ -97,6 +96,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 break;
 
             case R.id.textViewLogin:
+                finish();
                 startActivity(new Intent(this, MainActivity.class));
 
                 break;

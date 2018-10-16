@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
-        if(password.length()<8){
-            editTextPassword.setError("Minimum length of password should be 8");
+        if(password.length()<6){
+            editTextPassword.setError("Minimum length of password should be 6");
             editTextPassword.requestFocus();
             return;
         }
@@ -73,8 +73,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+                progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()){
-                    Intent intent= new Intent(MainActivity.this,ProfilleActivity.class);
+                    finish();
+                    Intent intent= new Intent(MainActivity.this,TabbedLayout.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
 
@@ -86,10 +88,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+
+        if (mAuth.getCurrentUser() != null) {
+            finish();
+            startActivity(new Intent(this, TabbedLayout.class));
+        }
+    }
+
+    @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.textViewSignup:
-
+                finish();
                 startActivity(new Intent(this, SignUpActivity.class));
 
                 break;
