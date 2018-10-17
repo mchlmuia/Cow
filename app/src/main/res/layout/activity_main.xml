@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/common_google_signin_btn_text_dark_default"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
 
     <RelativeLayout
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:hint="email"
+                android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:paddingBottom="15dp"
                 android:textColorHint="#396d39"
@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:hint="password"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingBottom="15dp"
                 android:textColorHint="#396d39" />

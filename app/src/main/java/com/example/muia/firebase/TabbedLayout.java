@@ -2,8 +2,6 @@ package com.example.muia.firebase;
 
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -80,7 +78,7 @@ public class TabbedLayout extends AppCompatActivity {
             case R.id.menuLogout:
                 FirebaseAuth.getInstance().signOut();
                 finish();
-                startActivity(new Intent(this,MainActivity.class));
+                startActivity(new Intent(this,LoginActivity.class));
         }
 
         return true;

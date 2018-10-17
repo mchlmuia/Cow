@@ -72,8 +72,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     progressBar.setVisibility(View.GONE);
                     if(task.isSuccessful()){
+                        Toast.makeText(getApplicationContext(), "Verification email has beeen sent", Toast.LENGTH_SHORT).show();
                         finish();
-                        startActivity(new Intent(SignUpActivity.this, MainActivity.class));
+                        startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
 
 
                     }else {
@@ -97,7 +98,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
             case R.id.textViewLogin:
                 finish();
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
 
                 break;
         }
