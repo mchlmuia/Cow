@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "667585562018",
-    "firebase_url": "https://fir-f04d5.firebaseio.com",
-    "project_id": "fir-f04d5",
-    "storage_bucket": "fir-f04d5.appspot.com"
+    "project_number": "407860295774",
+    "firebase_url": "https://ngombe-993df.firebaseio.com",
+    "project_id": "ngombe-993df",
+    "storage_bucket": "ngombe-993df.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:667585562018:android:0c164f20f367b31d",
+        "mobilesdk_app_id": "1:407860295774:android:0c164f20f367b31d",
         "android_client_info": {
           "package_name": "com.example.muia.firebase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "667585562018-e5ft5ec8a7o0pcul23jk46hoikdgot2j.apps.googleusercontent.com",
+          "client_id": "407860295774-jilg6da5u72o78ga5r439ujaid9j7sbq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.muia.firebase",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "667585562018-ugbuns2e10urkt4gj8cedffqv3oasone.apps.googleusercontent.com",
+          "client_id": "407860295774-o3csd5otksuo4ejn8drs4gj6ue6gen89.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAoQuGYJ_KSQ3j4xCUWWIPg-sKWx8YbNm8"
+          "current_key": "AIzaSyDF7nj4nDyzt-NlW587B4Cl686mazsASdM"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "667585562018-ugbuns2e10urkt4gj8cedffqv3oasone.apps.googleusercontent.com",
+              "client_id": "407860295774-o3csd5otksuo4ejn8drs4gj6ue6gen89.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -2,6 +2,7 @@ package com.example.muia.firebase;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -76,8 +77,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()){
-                    finish();
-                    Intent intent= new Intent(LoginActivity.this,TabbedLayout.class);
+
+                    Intent intent= new Intent(LoginActivity.this,TabActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
 
@@ -88,15 +89,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
 
-        if (mAuth.getCurrentUser() != null) {
-            finish();
-            startActivity(new Intent(this, TabbedLayout.class));
-        }
-    }
+
 
     @Override
     public void onClick(View view) {
