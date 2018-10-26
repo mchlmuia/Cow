@@ -11,7 +11,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="120dp"
         android:paddingTop="@dimen/appbar_padding_top"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -31,6 +31,9 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabGravity="center"
+            app:tabMode="scrollable"
+            app:tabRippleColor="@color/colorAccent"
             app:tabTextColor="#0c4647">
 
             <android.support.design.widget.TabItem

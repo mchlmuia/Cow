@@ -54,6 +54,11 @@ public class TabActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_whatshot_black_24dp);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_all_inclusive_black_24dp);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_star_black_24dp);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_account_circle_black_24dp);
+
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
@@ -111,6 +116,7 @@ public class TabActivity extends AppCompatActivity {
             }
             return null;
         }
+
 
 
         @Override
