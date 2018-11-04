@@ -3,14 +3,16 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/contact_item_id">
 
     <ImageView
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:src="@mipmap/ic_launcher_round"
         android:id="@+id/img_cowbreed"
-        android:background="#4f5256"/>
+        android:background="#ffff"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_call_black_24dp"
-            android:background="#4f5256"
+            android:background="#ffff"
             />
 
     </LinearLayout>

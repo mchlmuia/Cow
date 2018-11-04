@@ -33,12 +33,16 @@ public class CowBreedsFrag extends Fragment {
         super.onCreate(savedInstanceState);
 
         lstCowbreed= new ArrayList<>();
-        lstCowbreed.add(new CowBreed("Fresian","(0703589623)",R.drawable.a));
-        lstCowbreed.add(new CowBreed("Boran Bull","(0723380922)",R.drawable.b));
-        lstCowbreed.add(new CowBreed("Masai Bull","(0703589623)",R.drawable.c));
-        lstCowbreed.add(new CowBreed("Fresian","(0703589623)",R.drawable.d));
-        lstCowbreed.add(new CowBreed("Fresian Calf","(0703589623)",R.drawable.e));
-        lstCowbreed.add(new CowBreed("Fresian","(0703589623)",R.drawable.f));
-        lstCowbreed.add(new CowBreed("Fresian","(0703589623)",R.drawable.g));
+        lstCowbreed.add(new CowBreed("Robert Lewis","(0703589623)",R.drawable.a));
+        lstCowbreed.add(new CowBreed("Kevin Hart","(0723380922)",R.drawable.b));
+        lstCowbreed.add(new CowBreed("Masai Morris","(0703589623)",R.drawable.c));
+        lstCowbreed.add(new CowBreed("Winnie Ella","(0703589623)",R.drawable.d));
+        lstCowbreed.add(new CowBreed("Saitoti Olamoong","(0703589623)",R.drawable.e));
+        lstCowbreed.add(new CowBreed("Jessica Danielle","(0703589623)",R.drawable.f));
+        lstCowbreed.add(new CowBreed("Mary Maria","(0703589623)",R.drawable.g));
+        lstCowbreed.add(new CowBreed("Katile Kelitu","(0703589623)",R.drawable.h));
+        lstCowbreed.add(new CowBreed("Donald Trump","(0703589623)",R.drawable.i));
+        lstCowbreed.add(new CowBreed("Michael Muia","(0703589623)",R.drawable.j));
+        lstCowbreed.add(new CowBreed("Michael Jordan","(0703589623)",R.drawable.k));
     }
 }
