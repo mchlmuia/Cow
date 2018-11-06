@@ -101,7 +101,7 @@ public class SetupActivity extends AppCompatActivity {
                         setupName.setText(name);
 
                         RequestOptions placeholderRequest = new RequestOptions();
-                        placeholderRequest.placeholder(R.drawable.profilepicture);
+                        placeholderRequest.placeholder(R.drawable.default_image);
 
                         Glide.with(SetupActivity.this).setDefaultRequestOptions(placeholderRequest).load(image).into(setupImage);
 
@@ -160,7 +160,10 @@ public class SetupActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
 
                                 if (task.isSuccessful()) {
-                                    storeFirestore(task, user_name);
+                                    Intent mainIntent = new Intent(SetupActivity.this,MainActivity.class);
+                                    setupProgress.setVisibility(View.INVISIBLE);
+                                    startActivity(mainIntent);
+
 
                                 } else {
 
@@ -189,9 +192,9 @@ public class SetupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 
-                    if(ContextCompat.checkSelfPermission(SetupActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+                    if (ContextCompat.checkSelfPermission(SetupActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
 
                         Toast.makeText(SetupActivity.this, "Permission Denied", Toast.LENGTH_LONG).show();
                         ActivityCompat.requestPermissions(SetupActivity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
@@ -201,10 +204,14 @@ public class SetupActivity extends AppCompatActivity {
                         BringImagePicker();
 
                     }
+                }
+                    else {
+                        BringImagePicker();
+                    }
 
                 }
 
-            }
+
 
         });
 

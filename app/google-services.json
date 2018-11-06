@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "407860295774",
-    "firebase_url": "https://ngombe-993df.firebaseio.com",
-    "project_id": "ngombe-993df",
-    "storage_bucket": "ngombe-993df.appspot.com"
+    "project_number": "201968940115",
+    "firebase_url": "https://blog-app-78354.firebaseio.com",
+    "project_id": "blog-app-78354",
+    "storage_bucket": "blog-app-78354.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:407860295774:android:0c164f20f367b31d",
+        "mobilesdk_app_id": "1:201968940115:android:0c164f20f367b31d",
         "android_client_info": {
           "package_name": "com.example.muia.firebase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "407860295774-jilg6da5u72o78ga5r439ujaid9j7sbq.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.muia.firebase",
-            "certificate_hash": "7ffde334dcba68b472c666d5ed85c13c968b1914"
-          }
-        },
-        {
-          "client_id": "407860295774-o3csd5otksuo4ejn8drs4gj6ue6gen89.apps.googleusercontent.com",
+          "client_id": "201968940115-0u2c7ir38h7g4elq070fei2o2q1h6sa4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDF7nj4nDyzt-NlW587B4Cl686mazsASdM"
+          "current_key": "AIzaSyAgmKSWpxHSC-qxlHu3EtwMO5ieNcXwR5A"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "407860295774-o3csd5otksuo4ejn8drs4gj6ue6gen89.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

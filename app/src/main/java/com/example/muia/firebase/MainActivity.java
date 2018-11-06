@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Toolbar mainToolbar;
     private FirebaseAuth mAuth;
-    private FirebaseFirestore firebaseFirestore;
+   private FirebaseFirestore firebaseFirestore;
 
     private String current_user_id;
 
@@ -106,11 +106,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+
+
+
         }
 
 
     }
-
     @Override
     protected void onStart() {
         super.onStart();
@@ -132,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
                         if(!task.getResult().exists()){
 
-                            Intent setupIntent = new Intent(MainActivity.this, MainActivity.class);
+                            Intent setupIntent = new Intent(MainActivity.this, SetupActivity.class);
                             startActivity(setupIntent);
                             finish();
 
@@ -152,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 
 
     @Override
