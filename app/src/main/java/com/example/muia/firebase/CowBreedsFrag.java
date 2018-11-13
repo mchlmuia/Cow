@@ -15,16 +15,16 @@ import java.util.List;
 
 public class CowBreedsFrag extends Fragment {
     View v;
-    private RecyclerView myrecyclerview;
+    private RecyclerView myblogrecyclerview;
     private List<CowBreed> lstCowbreed;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         v= inflater.inflate(R.layout.cowbreeds, container,false);
-        myrecyclerview= (RecyclerView) v.findViewById(R.id.cowbreeds_recyclerview);
+        myblogrecyclerview= (RecyclerView) v.findViewById(R.id.cowbreeds_recyclerview);
         RecyclerViewAdapter recyclerAdapter = new RecyclerViewAdapter(getContext(),lstCowbreed);
-        myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
-        myrecyclerview.setAdapter(recyclerAdapter);
+        myblogrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
+        myblogrecyclerview.setAdapter(recyclerAdapter);
         return v;
     }
 
@@ -44,5 +44,6 @@ public class CowBreedsFrag extends Fragment {
         lstCowbreed.add(new CowBreed("Donald Trump","(0703589623)",R.drawable.i));
         lstCowbreed.add(new CowBreed("Michael Muia","(0703589623)",R.drawable.j));
         lstCowbreed.add(new CowBreed("Michael Jordan","(0703589623)",R.drawable.k));
+
     }
 }

@@ -30,9 +30,7 @@ public class CowBreed {
         return Photo;
     }
 
-    public void setName(String name) {
-        Name = name;
-    }
+    public void setName(String name) { Name = name; }
 
     public void setIndetification(String indetification) {
         Indetification = indetification;

@@ -20,7 +20,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     Context mContext;
     List<CowBreed> mData;
-    Dialog myDialog;
+    Dialog myDialogg;
 
     public RecyclerViewAdapter(Context mContext, List<CowBreed> mData) {
         this.mContext = mContext;
@@ -36,20 +36,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         //Dialog Initialization
 
-        myDialog  = new Dialog(mContext);
-        myDialog.setContentView(R.layout.dialog_contact);
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialogg  = new Dialog(mContext);
+        myDialogg.setContentView(R.layout.dialog_contact);
+        myDialogg.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         vHolder.item_contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView dialog_name_tv= (TextView) myDialog.findViewById(R.id.dialog_name_id);
-                TextView dialog_phone_tv =(TextView) myDialog.findViewById(R.id.dialog_cow_id);
-                ImageView dialog_contact_img = (ImageView) myDialog.findViewById(R.id.dialog_img);
+                TextView dialog_name_tv= (TextView) myDialogg.findViewById(R.id.dialog_name_id);
+                TextView dialog_phone_tv =(TextView) myDialogg.findViewById(R.id.dialog_cow_id);
+                ImageView dialog_contact_img = (ImageView) myDialogg.findViewById(R.id.dialog_img);
                 dialog_name_tv.setText(mData.get(vHolder.getAdapterPosition()).getName());
-                dialog_phone_tv.setText(mData.get(vHolder.getAdapterPosition()).getName());
+                dialog_phone_tv.setText(mData.get(vHolder.getAdapterPosition()).getIndetification());
                 dialog_contact_img.setImageResource(mData.get(vHolder.getAdapterPosition()).getPhoto());
-                myDialog.show();
+                myDialogg.show();
             }
         });
         return vHolder;

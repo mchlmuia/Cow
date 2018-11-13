@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_columnWeight="3"
+    android:layout_marginTop="70dp"
     android:layout_weight="3"
     android:orientation="vertical"
     android:padding="10dp"
@@ -36,13 +37,13 @@
                     android:layout_height="64dp"
                     android:background="@drawable/cerclebackgroundblue"
                     android:padding="10dp"
-                    android:src="@drawable/ic_attach_money_black_24dp" />
+                    android:src="@drawable/ic_accessibility_black_24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Banking"
+                    android:text="Accesibilitty"
                     android:textStyle="bold" />
 
                 <View
@@ -56,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Check your bank activities"
+                    android:text="Get all relevant data on farming"
                     android:textColor="#bab8ae" />
 
             </LinearLayout>
@@ -183,13 +184,13 @@
                     android:layout_height="64dp"
                     android:background="@drawable/cerclebackgroundred"
                     android:padding="10dp"
-                    android:src="@drawable/ic_wifi_black_24dp" />
+                    android:src="@drawable/ic_format_paint_black_24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="WiFi"
+                    android:text="Reshape"
                     android:textStyle="bold" />
 
                 <View
@@ -203,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Connect to Wifi"
+                    android:text="Make over your farm"
                     android:textColor="#bab8ae" />
 
             </LinearLayout>
